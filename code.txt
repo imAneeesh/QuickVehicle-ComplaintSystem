@@ -1,6 +1,0 @@
-CREATE TRIGGER `delete_complaint` AFTER INSERT ON `notice`
- FOR EACH ROW DELETE FROM complaints WHERE chas_no=NEW.chas_no
-
-
-
- update complaints set status="FOUND" where chas_no=NEW.chas_no
